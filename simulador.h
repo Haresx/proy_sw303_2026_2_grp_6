@@ -21,10 +21,10 @@ typedef struct{
 //Funciones
 //Persona 1 (Leyton)
 int leer_parametros (Parametros *p);             //Puntero para modificar directamente los valores
-void clasificar_amortiguamiento (Parametros p)  //Sin puntero (procedimiento de lectura);
+void clasificar_amortiguamiento (Parametros p);  //Sin puntero (procedimiento de lectura);
 
 //Persona 2 (Ramiro)
-double calcular_fuerza (double t, int tipo_fuerza)  //validar primero el tipo de fuerza (1,2 o 3)
+double calcular_fuerza (double t, int tipo_fuerza);  //validar primero el tipo de fuerza (1,2 o 3)
 
 //Persona 3 (Diego)
 void calcular_estadisticas (Estado *resultados, int total_pasos, double *x_max, double *t_estabilizacion);
