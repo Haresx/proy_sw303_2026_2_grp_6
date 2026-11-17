@@ -1,3 +1,4 @@
+#include "SIMULADOR_H"
 #include "INTEGRADOR_H"
 #include "FUERZA_EXTERNA_H" 
 
@@ -7,7 +8,7 @@ double calcular_aceleracion(double t, double x, double v, Parametros p) {
     return (fuerza - (p.c * v) - (p.k * x)) / p.m; //formula de la segunda derivada despejada(aceleracion)
 }
 
-void ejecutar_rk4(Parametros p, Estado *resultados, int *total_pasos) { 
+void runge_kutta4(Parametros p, Estado *resultados, int *total_pasos) { 
     double t = 0.0; 
     double x = p.x0; 
     double v = p.v0; 
